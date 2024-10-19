@@ -1,61 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br"
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diplay flex</title>
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        .container{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap-reverse;
-            background-color: #000000;
-        }
+<html lang="pt-br" <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diplay flex</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
-        .box{
-            position: relative;
-            width: 20%;
-            height: 20%;
-            background-color: #ababab;
-            color: #ffffff;
-            border: 2px solid #ffffff;
-            border-radius: 5em;
-            margin: 1em;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
+    .container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #000000;
+    }
 
-        .box:hover{
-            border: 2px solid #ff0000;
-            color: #ff0000;
+    .box {
+        position: relative;
+        width: 20%;
+        height: 20%;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 5em;
+        margin: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 
-        }
-    </style>
+    .box:hover {
+        border: 2px solid #e72ac8;
+        color: #f3ff4c;
+
+    }
+
+
+    .red {
+        background-color: #ff0000;
+    }
+
+    .green {
+        background-color: #00ff00;
+    }
+
+    .blue {
+        background-color: #0000ff;
+    }
+</style>
 </head>
+
 <body>
     <div class="container">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
-        <div class="box">6</div>
-        <div class="box">7</div>
-        <div class="box">8</div>
-        <div class="box">9</div>
-        <div class="box">10</div>
-        
+        <div class="box red">1</div>
+        <div class="box green">2</div>
+        <div class="box blue">3</div>
+        <div class="box red">4</div>
+        <div class="box green">5</div>
+        <div class="box blue">6</div>
+        <div class="box red">7</div>
+        <div class="box green">8</div>
+        <div class="box blue">9</div>
+        <div class="box red">10</div>
+        <div class="box green">11</div>
+        <div class="box blue">12</div>
     </div>
 </body>
+
 </html>
